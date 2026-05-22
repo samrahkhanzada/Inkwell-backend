@@ -24,8 +24,7 @@ app.use(cors({
   //   'https://inkwell-frontend-one.vercel.app',
   //   process.env.CLIENT_URL,
   // ],
-  // origin: process.env.CLIENT_URL || 'http://localhost:3000',
-  origin: process.env.CLIENT_URL ,
+  origin: process.env.CLIENT_URL || 'http://localhost:3000',
   credentials: true,
 }));
 app.use(express.json({ limit: '50mb' }));
